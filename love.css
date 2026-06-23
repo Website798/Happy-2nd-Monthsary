@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f0e6f6;
+  min-height: 100vh;
+  padding: 30px 20px;
+  overflow-x: hidden;
+}
+
+.letter-container {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.letter {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  padding: 40px 30px;
+}
+
+.message-content {
+  width: 100%;
+}
+
+.long-message {
+  font-family: "Dancing Script", 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  color: #333333;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.signature {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.7rem;
+  color: #d9534f;
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.photo-gallery {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px dashed #ffb3b3;
+  animation: fadeIn 0.4s ease;
+  text-align: center; 
+}
+
+.photo-gallery h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  color: #d9534f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  width: 100%;
+}
+
+.photos img {
+  width: auto;       
+  height: auto;      
+  max-width: 100%;  
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.photo-btn {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #fff0f3;
+  border: 2px solid #ffb3c1;
+  color: #d9534f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.photo-btn:hover {
+  background-color: #ffd6e0;
+  border-color: #ff8fa3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 15px;
+  }
+
+  .letter {
+    padding: 30px 20px;
+  }
+
+  .long-message {
+    font-size: 1.15rem;
+  }
+
+  .signature {
+    font-size: 1.5rem;
+  }
+}
